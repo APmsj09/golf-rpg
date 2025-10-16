@@ -24,6 +24,31 @@ body {
     display: flex;
     flex-direction: column;
 }
+#game-message {
+    font-weight: bold; color: #1d3557; text-align: center; min-height: 20px; margin-top: auto;
+}
+
+/* NEW: Weather UI styling */
+#weather-ui {
+    background-color: #dde8f0;
+    border: 1px solid #a8dadc;
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* NEW: Spin control checkbox */
+#use-spin-checkbox {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#shot-ui label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9em;
+}
 
 h1, h2, h3 {
     color: #333;
