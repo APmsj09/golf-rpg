@@ -14,6 +14,8 @@
             <h2>Player Stats</h2>
             <p>Level: <span id="player-level">1</span></p>
             <p>XP: <span id="player-xp">0</span> / <span id="xp-to-next-level">100</span></p>
+            <p>Skill Points: <span id="player-sp">0</span></p>
+            <button id="skill-tree-btn">Open Skill Tree</button>
             <hr>
             <h3>Attributes</h3>
             <p>Power: <span id="stat-power">10</span></p>
@@ -24,19 +26,48 @@
             <p>Hole: <span id="hole-number">1</span></p>
             <p>Par: <span id="hole-par">4</span></p>
             <p>Strokes: <span id="hole-strokes">0</span></p>
-            <p>Distance to Hole: <span id="distance-to-hole">450</span> yards</p>
+            <p>Distance: <span id="distance-to-hole">450</span> yards</p>
+            <p>Ball lies: <span id="terrain-type">Tee Box</span></p>
             <hr>
+            <h2>Shot Setup</h2>
+            <div>
+                <label for="club-select">Club:</label>
+                <select id="club-select">
+                    <option value="driver">Driver</option>
+                    <option value="iron">Iron</option>
+                    <option value="wedge">Wedge</option>
+                    <option value="putter">Putter</option>
+                </select>
+            </div>
             <div id="shot-ui">
+                <p>Power Meter</p>
                 <div id="power-bar-container">
                     <div id="power-bar"></div>
                 </div>
+                <p>Accuracy Meter</p>
                 <div id="accuracy-bar-container">
                     <div id="accuracy-marker"></div>
+                </div>
+                <p>Spin Control</p>
+                <div id="control-bar-container">
+                    <div id="control-marker"></div>
+                    <div id="control-center-line"></div>
                 </div>
             </div>
              <p id="game-message">Click to start your swing!</p>
         </div>
     </div>
+
+    <div id="skill-tree-modal" class="modal-hidden">
+        <div id="skill-tree-content">
+            <h2>Skill Tree</h2>
+            <p>Spend your Skill Points to improve your golfer!</p>
+            <div id="skills-container">
+                </div>
+            <button id="close-skill-tree-btn">Close</button>
+        </div>
+    </div>
+
     <script src="game.js"></script>
 </body>
 </html>
