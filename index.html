@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Pro Golf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pixel Pro Golf</h1>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="ui-container">
+            <h2>Player Stats</h2>
+            <p>Level: <span id="player-level">1</span></p>
+            <p>XP: <span id="player-xp">0</span> / <span id="xp-to-next-level">100</span></p>
+            <hr>
+            <h3>Attributes</h3>
+            <p>Power: <span id="stat-power">10</span></p>
+            <p>Accuracy: <span id="stat-accuracy">10</span></p>
+            <p>Control: <span id="stat-control">10</span></p>
+            <hr>
+            <h2>Hole Info</h2>
+            <p>Hole: <span id="hole-number">1</span></p>
+            <p>Par: <span id="hole-par">4</span></p>
+            <p>Strokes: <span id="hole-strokes">0</span></p>
+            <p>Distance to Hole: <span id="distance-to-hole">450</span> yards</p>
+            <hr>
+            <div id="shot-ui">
+                <div id="power-bar-container">
+                    <div id="power-bar"></div>
+                </div>
+                <div id="accuracy-bar-container">
+                    <div id="accuracy-marker"></div>
+                </div>
+            </div>
+             <p id="game-message">Click to start your swing!</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
