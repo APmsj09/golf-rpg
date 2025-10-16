@@ -28,16 +28,14 @@
             <p>Strokes: <span id="hole-strokes">0</span></p>
             <p>Distance: <span id="distance-to-hole">450</span> yards</p>
             <p>Ball lies: <span id="terrain-type">Tee Box</span></p>
+            <div id="weather-ui">
+                <p>Weather: <span id="weather-conditions">Calm</span></p>
+            </div>
             <hr>
             <h2>Shot Setup</h2>
             <div>
                 <label for="club-select">Club:</label>
-                <select id="club-select">
-                    <option value="driver">Driver</option>
-                    <option value="iron">Iron</option>
-                    <option value="wedge">Wedge</option>
-                    <option value="putter">Putter</option>
-                </select>
+                <select id="club-select"></select>
             </div>
             <div id="shot-ui">
                 <p>Power Meter</p>
@@ -53,6 +51,9 @@
                     <div id="control-marker"></div>
                     <div id="control-center-line"></div>
                 </div>
+                <label>
+                    <input type="checkbox" id="use-spin-checkbox" checked> Use Spin Control
+                </label>
             </div>
              <p id="game-message">Click to start your swing!</p>
         </div>
@@ -62,12 +63,12 @@
         <div id="skill-tree-content">
             <h2>Skill Tree</h2>
             <p>Spend your Skill Points to improve your golfer!</p>
-            <div id="skills-container">
-                </div>
+            <div id="skills-container"></div>
             <button id="close-skill-tree-btn">Close</button>
         </div>
     </div>
 
+    <script src="course.js"></script>
     <script src="game.js"></script>
 </body>
 </html>
